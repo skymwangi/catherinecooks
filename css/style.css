@@ -91,13 +91,26 @@ flex-shrink:1;
     }
 
     .nav-links {
-        gap: 15px; /* Reduces spacing between links */
-        font-size: 0.9rem; /* Makes links readable without being tiny */
+        gap: 20px;
     }
-    img{
-    max-width:100%;
-    height:auto;
-    display:block;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    .homepage-title p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
     .food-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on phone */
