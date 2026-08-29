@@ -153,7 +153,7 @@ body {
   .food-grid {
     grid-template-columns: 1fr;
     gap: 0.75rem;
-    margin: 0.75rem 0;
+    margin: 0.75rem 0.5rem;
     padding: 0.75rem 0;
     width: 100%;
   }
@@ -167,6 +167,7 @@ body {
   .group-toggle {
     font-size: 16px;
     padding: 0.75rem;
+    width: 100%;
   }
 
   .menu-title {
@@ -283,17 +284,19 @@ body {
     gap: 0.75rem;
     margin: 0.75rem 0.75rem;
     padding: 0.75rem 0;
+    width: 100%;
   }
 
   .food-group {
     margin: 0.75rem 0;
     padding: 0;
+    width: 100%;
   }
 
   .group-toggle {
     font-size: 14px;
     padding: 0.6rem;
-    margin: 0 0.75rem;
+    width: 100%;
   }
 
   .food-item {
@@ -427,7 +430,8 @@ img[alt*="hero"] {
 /* Food Group */
 .food-group {
   margin: 1rem 0;
-  padding: 0 0.5rem;
+  padding: 0;
+  width: 100%;
 }
 
 .group-toggle {
