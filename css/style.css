@@ -455,7 +455,7 @@ img[alt*="hero"] {
 }
 
 .food-items {
-  display: none; /* collapsed by default */
+  display: block;
   margin-left: 0;
   margin-top: 1rem;
 }

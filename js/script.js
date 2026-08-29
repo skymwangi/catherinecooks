@@ -203,7 +203,9 @@ function restoreGroupState() {
     document.querySelectorAll('.group-toggle').forEach((toggle, index) => {
         const items = toggle.nextElementSibling;
         const saved = localStorage.getItem(`group_${index}_open`);
-        items.style.display = saved === "true" ? "block" : "none";
+        // Default to "true" (open) if not saved, so all groups show on first visit
+        const isOpen = saved === null ? true : saved === "true";
+        items.style.display = isOpen ? "block" : "none";
     });
 }
 
@@ -212,6 +214,7 @@ document.querySelectorAll('.group-toggle').forEach((toggle, index) => {
         const items = toggle.nextElementSibling;
         const isOpen = items.style.display === 'block';
         items.style.display = isOpen ? 'none' : 'block';
+        // Save the NEW state (after toggle)
         localStorage.setItem(`group_${index}_open`, !isOpen);
     });
 });
