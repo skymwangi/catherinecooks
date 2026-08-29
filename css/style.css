@@ -167,7 +167,6 @@ body {
   .group-toggle {
     font-size: 16px;
     padding: 0.75rem;
-    width: 100%;
   }
 
   .menu-title {
@@ -428,8 +427,7 @@ img[alt*="hero"] {
 /* Food Group */
 .food-group {
   margin: 1rem 0;
-  padding: 0;
-  width: 100%;
+  padding: 0 0.5rem;
 }
 
 .group-toggle {
@@ -446,7 +444,6 @@ img[alt*="hero"] {
   border-radius: 8px;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
-  box-sizing: border-box;
 }
 
 .group-toggle:hover {
@@ -455,7 +452,7 @@ img[alt*="hero"] {
 }
 
 .food-items {
-  display: block;
+  display: none; /* collapsed by default */
   margin-left: 0;
   margin-top: 1rem;
 }
