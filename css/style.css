@@ -153,18 +153,21 @@ body {
   .food-grid {
     grid-template-columns: 1fr;
     gap: 0.75rem;
-    margin: 1rem 0;
+    margin: 0.75rem 0;
     padding: 0.75rem 0;
+    width: 100%;
   }
 
   .food-group {
     margin: 0.75rem 0;
     padding: 0;
+    width: 100%;
   }
 
   .group-toggle {
     font-size: 16px;
     padding: 0.75rem;
+    width: 100%;
   }
 
   .menu-title {
@@ -425,7 +428,8 @@ img[alt*="hero"] {
 /* Food Group */
 .food-group {
   margin: 1rem 0;
-  padding: 0 0.5rem;
+  padding: 0;
+  width: 100%;
 }
 
 .group-toggle {
@@ -442,6 +446,7 @@ img[alt*="hero"] {
   border-radius: 8px;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
+  box-sizing: border-box;
 }
 
 .group-toggle:hover {
