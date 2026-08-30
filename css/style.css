@@ -427,12 +427,12 @@ img[alt*="hero"] {
   overflow-x: hidden;
 }
 
-/* Food Group */
+/* Food Group (Cleaned up for Grid Child behavior) */
 .food-group {
-  margin: 1rem 0;
-  padding: 0;
-  width: 100%;
+  padding: 0; /* Keep if you plan to change this later */
+  /* Width and Margin removed so CSS Grid can manage the layout flawlessly */
 }
+
 
 .group-toggle {
   background: linear-gradient(135deg, #f5f5f5, #eeeeee);
